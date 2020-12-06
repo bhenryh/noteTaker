@@ -16,5 +16,5 @@ app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
 
 app.listen(PORT, () => {
-    console.log('Listening at port' + PORT)
+    console.log("Listening at port" + PORT)
 });
