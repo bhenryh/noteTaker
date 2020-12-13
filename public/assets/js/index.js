@@ -141,6 +141,13 @@ const getAndRenderNotes = () => {
 };
 
 $saveNoteBtn.on("click", handleNoteSave);
+// Check this for working!!!
+document.addEventListener('keypress', function(){
+  if (Event.keyCode == "&#13;"){
+    handleNoteSave();
+  }
+}
+);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
 $noteList.on("click", ".delete-note", handleNoteDelete);
